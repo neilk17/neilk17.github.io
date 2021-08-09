@@ -2,6 +2,11 @@ a {
     text-decoration: none;
 } 
 
-.p1 {
+* {
     font-family: 'Roboto Mono', monospace;
     }
+
+body {
+color: #222;
+background: #fff;
+}
