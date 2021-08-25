@@ -1,0 +1,12 @@
+a {
+    text-decoration: none;
+} 
+
+* {
+    font-family: 'Roboto Mono', monospace;
+    }
+
+body {
+color: #222;
+background: #fff;
+}
