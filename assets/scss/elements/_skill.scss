@@ -22,11 +22,10 @@
             letter-spacing: 1px;
             display: block;
             line-height: 14px;
-
+            margin-bottom: 10px;
             @media #{$large-mobile} {
                 text-align: center;
             }
-
             @media #{$small-mobile} {
                 line-height: 24px;
                 letter-spacing: 1px;
@@ -257,7 +256,7 @@
                     @media #{$sm-layout} {
                         display: block;
                     }
-                    
+
                     .title {
                         margin-bottom: 15px;
 
@@ -308,11 +307,13 @@
                     color: var(--color-body);
                     transition: var(--transition);
                 }
-                &.psudo-after-none{
-                    &::after{
+
+                &.psudo-after-none {
+                    &::after {
                         display: none;
                     }
-                    &::before{
+
+                    &::before {
                         display: none;
                     }
                 }

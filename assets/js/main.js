@@ -27,13 +27,24 @@
             imJs.contactForm();
             imJs.wowActive();
             imJs.awsActivation();
-            // imJs.demoActive();
-            // imJs.activePopupDemo();
+            imJs.activePopupDemo();
             
         },
 
         
-        
+        activePopupDemo: function (e) {
+            $('.popuptab-area li a.demo-dark').on('click', function (e) {
+                $('.demo-modal-area').addClass('dark-version');
+                $('.demo-modal-area').removeClass('white-version');
+            });
+
+            $('.popuptab-area li a.demo-light').on('click', function (e) {
+                $('.demo-modal-area').removeClass('dark-version');
+                $('.demo-modal-area').addClass('white-version');
+            })
+        },
+
+       
 
         contactForm: function () {
             $('.rwt-dynamic-form').on('submit', function (e) {
@@ -67,7 +78,6 @@
 					}
 				});
 			});
-
         },
 
         

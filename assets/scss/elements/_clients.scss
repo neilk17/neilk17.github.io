@@ -12,20 +12,23 @@
     @media #{$lg-layout} {
         height: auto;
     }
+
     @media #{$md-layout} {
         width: 100%;
         float: none;
         display: inline-block;
-        padding: 30px 0;
+        padding: 0;
         margin-bottom: 50px;
     }
+
     @media #{$sm-layout} {
         width: 100%;
         float: none;
         display: inline-block;
-        padding: 20px 0;
+        padding: 0;
         margin-bottom: 50px;
     }
+
     @media #{$large-mobile} {
         margin-bottom: 35px;
     }
@@ -88,11 +91,9 @@
 .clients-wrapper {
     width: 100%;
 }
-
 .rn-client-area {
     .section-title {
         text-align: left;
-
         @media #{$sm-layout} {
             text-align: center !important;
         }
