@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+
+	<style>
+	.navigation {
+	  display: flex;
+	  flex-flow: row wrap;
+	  justify-content: flex-end;
+	}
+
+	/* Medium screens */
+	@media all and (max-width: 800px) {
+	  .navigation {
+	    justify-content: space-around;
+	  }
+	}
+
+	/* Small screens */
+	@media all and (max-width: 500px) {
+	  .navigation {
+	    flex-direction: column;
+	  }
+	}
+	.text {
+	    font-family: 'Oswald', sans-serif;
+	}
+	</style>
+    </head>
+    <body>
+	<img class="navigation" src="ramen.png" alt="Ramen" width="800" height="600">
+	<div class="text">
+	    <h1>Recipe</h1>
+	    <h3>Ingredients</h3>
+	    <ol>
+		    <li>2 large eggs</li>
+		    <li>1 tablespoon olive oil</li>
+		    <li>4 cloves garlic, minced</li>
+		    <li>1 tablespoon freshly grated ginger</li>
+		    <li>4 cups reduced sodium chicken broth</li>
+		    <li>4 ounces shiitake mushrooms</li>
+		    <li>1 tablespoon reduced sodium soy sauce</li>
+		    <li>3 (5.6-ounce) packages refrigerated Yaki-Soba, seasoning sauce packets discarded*</li>
+		    <li>3 cups baby spinach</li>
+		    <li>8 slices Narutomaki, optional*</li>
+		    <li>1 carrot, grated</li>
+		    <li>2 green onions, thinly slicedEggs</li>
+	    </ol>
+	    <h3>Directions</h3>
+	    <ol>
+		    <li>Place eggs in a large saucepan and cover with cold water by 1 inch. 
+			Bring to a boil and cook for 1 minute. Cover eggs with a 
+			tight-fitting lid and remove from heat; set aside for 8-10 minutes. 
+			Drain well and let cool before peeling and halving.</li>
+		    <li>Heat olive oil in a large stockpot or Dutch oven over medium heat. 
+			Add garlic and ginger, and cook, stirring frequently, until fragrant, about 1-2 minutes.</li>
+		    <li>Whisk in chicken broth, mushrooms, soy sauce and 3 cups water.</li>
+		    <li>Bring to a boil; reduce heat and simmer until mushrooms 
+			have softened, about 10 minutes. Stir in Yaki-Soba until 
+			loosened and cooked through, about 2-3 minutes.</li>
+		    <li>Stir in spinach, Narutomaki, carrot and green onions until 
+			the spinach begins to wilt, about 2 minutes.</li>
+		    <li>Serve immediately, garnished with eggs.</li>
+	    </ol>
+	    <a href="https://damndelicious.net/2014/10/13/easy-homemade-ramen/">Link to orignal recipe</a>
+	</div>
+
+    </body>
+</html>
