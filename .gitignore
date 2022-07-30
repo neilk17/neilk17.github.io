@@ -1,4 +1,5 @@
 .DS_Store
 public/test.html
-.firebase*.cache
+.firebase
+
 
