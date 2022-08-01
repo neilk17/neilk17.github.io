@@ -4,35 +4,20 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    	<link rel="stylesheet" href="styles.css">
 
-	<style>
-	.navigation {
-	  display: flex;
-	  flex-flow: row wrap;
-	  justify-content: flex-end;
-	}
-
-	/* Medium screens */
-	@media all and (max-width: 800px) {
-	  .navigation {
-	    justify-content: space-around;
-	  }
-	}
-
-	/* Small screens */
-	@media all and (max-width: 500px) {
-	  .navigation {
-	    flex-direction: column;
-	  }
-	}
-	.text {
-	    font-family: 'Oswald', sans-serif;
-	}
-	</style>
     </head>
     <body>
-	<img class="navigation" src="ramen.png" alt="Ramen" width="800" height="600">
-	<div class="text">
+    <nav>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item">
+            <button class="btn-primary">Contact</button>
+            </li>
+        </ul>
+    </nav>
+	<img src="ramen.png" alt="Ramen" width="800" height="600">
+	<div>
 	    <h1>Recipe</h1>
 	    <h3>Ingredients</h3>
 	    <ol>
