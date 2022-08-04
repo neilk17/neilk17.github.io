@@ -1,21 +1,23 @@
 :root {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mid: 24px;
   }
 @font-face {
-font-family: "San Francisco";
-font-weight: 400;
-src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
 .container {
     display: flex;
-    font-weight: bold;
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
 }
 .navbar {
+    font-weight: bold;
+    overflow: hidden;
     margin-top: 2rem;
-    font-size: 24px;
+    font-size: var(--font-mid);
 }
 .navbar a{
     text-decoration: none;
@@ -28,16 +30,12 @@ src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/
 .topnav .icon {
     display: none;
   }
-@media screen and (max-width: 600px) {
-    .navbar a:not(:last-child) {display: none;}
-    .topnav a.icon {
-        display: block;
-      }
-}
 .main {
+    font-weight: bold;
     display: flex;
     flex-direction: row;
-    margin-top: 10rem;
+    margin-top: 30vh;
+    margin-bottom: 25vh;
     margin-left: auto;
     margin-right: auto;
     vertical-align: middle;
@@ -69,8 +67,51 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     margin: 4px 2px;
     cursor: pointer;
+}
+.projects {
+    font-size: var(--font-mid);
+    overflow-x: hidden;
+}
+.projects section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+.curve {
+    position: absolute;
+    height: 225px;
+    width: 100%;
+    bottom: 0;
+}
+.curve::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: white;
+    transform: translate(85%, 60%);
+}
+.curve::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: black;
+    transform: translate(-4%, 40%);
+    z-index: -1;
+}
+.black {
+    background-color: black;
+    color: white;
 }

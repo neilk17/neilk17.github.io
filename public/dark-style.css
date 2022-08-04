@@ -1,4 +1,14 @@
-* {
+/* * {
     background-color: black;
     color: white;
+} */
+button {
+   background-color: white; 
+   color: black;
+}
+.black {
+    background-color: white;
+}
+.curve::after {
+    background-color: black;
 }
