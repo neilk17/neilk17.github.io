@@ -1,6 +1,13 @@
+:root {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+@font-face {
+font-family: "San Francisco";
+font-weight: 400;
+src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
 .container {
     display: flex;
-    font-family: 'SF Pro';
     font-weight: bold;
     flex-direction: column;
     justify-content: flex-start;
@@ -62,7 +69,6 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-family: "SF Pro";
     font-size: 16px;
     font-weight: bold;
     margin: 4px 2px;
