@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    font-family: 'SF Pro';
+    font-weight: bold;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+.navbar {
+    margin-top: 2rem;
+    font-size: 24px;
+}
+.navbar a{
+    text-decoration: none;
+    color: inherit;
+    margin-right: 2rem;
+}
+.navbar a:hover {
+    color: coral;
+}
+.topnav .icon {
+    display: none;
+  }
+@media screen and (max-width: 600px) {
+    .navbar a:not(:last-child) {display: none;}
+    .topnav a.icon {
+        display: block;
+      }
+}
+.main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+@media (max-width: 800px) {
+    .main {
+      flex-direction: row;
+      flex-wrap: wrap; 
+    }
+}
+.main img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+.main p {
+    font-size: min(3rem, 10vw);
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "SF Pro";
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+}

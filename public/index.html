@@ -6,49 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/jpg" href="favicon_io/favicon-32x32.png"/>
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="shortcut icon" type="image/jpg" href="favicon_io/favicon-32x32.png"/> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="light-style.css" id="theme-link">
+    <script src="script.js" async></script>
 
-    <!-- Google fonts --> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
     <title>Neil Kanakia</title>
     </head>
-    
     <body>
-    <div class="container">
-        <nav>
-            <ul class="nav-list">
-                    <li class="nav-item"><a href="#">About</a></li>
-                    <li class="nav-item"><a href="#">Resume</a></li>
-                    <li class="nav-item"><a href="#">Contact</a></li>      
-                </ul>
-        </nav>
-        <main>
-            <div id="name"> I am Neil Kanakia.<br>
-        Design. Software. Business.
+        <div class="container">
+            <div class="navbar">
+                <a href="#">About</a>
+                <a href="#">Work</a>
+                <a href="#">Contact</a>
+                <button class="btn-toggle">Dark</button>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
-        </main>
-        <div id="project"></div>
-        <div class="card" id="content1">
-            <a href="game.html">
-                <div class="card2">
-                <div class="text">Games</div>
-            </a>
+            <div class="main">
+                <img src="face2.png" alt="face with mac">
+                <div class="circle"></div>
+                <p>
+                    Neil Kanakia.<br>
+                    Software Engineer.<br>
+                    UI Designer.<br>
+                </p>
             </div>
-        </div> 
-        <div class="card" id="content2">
-            <div class="card2">
-            <div class="text"></div>
-            </div>
-        </div>
-        <div class="card" id="content3">
-            <div class="card2">
-            <div class="text"></div>
-            </div>
-        </div>
-        <div id="footer"></div>
         </div>
     </body>
 </html>

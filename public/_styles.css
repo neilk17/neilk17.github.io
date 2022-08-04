@@ -1,6 +1,6 @@
 :root {
   --main-bg-color: #0a0d12;
-  --primary-color: #12171f;
+  --primary-color: hsl(217, 27%, 10%);
 }
 .container {
   color: #ffffff;
@@ -9,7 +9,7 @@
   font-size: 22px;
   height: 100vh;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 1.2fr 0.3fr 1fr 0.5fr;
+  grid-template-rows: 0.2fr 1.2fr 0.3fr 1fr 0.2fr;
   grid-template-areas: 
     "nav nav nav"
     "main main main"
@@ -35,8 +35,7 @@
   font-family: 'Open Sans';
   font-size: 24px;
   text-decoration: none;
-  color: white;
-  transition: all 200ms ease-in;
+  color: white; transition: all 200ms ease-in;
 }
 
 .nav-item a:hover {
@@ -58,7 +57,7 @@ nav {
 
 main {
   border-radius: 10px;
-  background: #000000;
+  background: var(--primary-color);
   font-size: 48px;
   font-weight: bold;
   grid-area: main;
@@ -85,6 +84,7 @@ main {
 #project {
   border-radius: 10px;
   grid-area: project;  
+  text-align: center;
 }
 
 #footer {
@@ -110,26 +110,40 @@ main {
   }
 }
 .card {
- width: auto;
- height: 254px;
+ width: 30vw;
+ height: 10em;
  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
  border-radius: 20px;
  transition: all .3s;
 }
 
 .card2 {
- width: auto;
- height: 254px;
+ width: 30vw;
+ height: 10em;
  background-color: var(--primary-color);
  border-radius: 17px;
  transition: all .2s;
+ display: table-cell;
+ vertical-align: middle;
+ text-align: center;
 }
 
+.card2 a {
+  text-decoration: none;
+  color: white;
+}
 .card2:hover {
  transform: scale(0.98);
  border-radius: 20px;
+
 }
+
 
 .card:hover {
  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+.project {
+  font-size: 3em;
+  color: white;
 }
