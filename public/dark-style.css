@@ -1,13 +1,16 @@
-/* * {
+* {
     background-color: black;
     color: white;
-} */
+}
 button {
    background-color: white; 
    color: black;
 }
 .black {
-    background-color: white;
+    background-color: black;
+}
+.curve::before {
+    background-color: black;
 }
 .curve::after {
     background-color: black;
