@@ -4,7 +4,6 @@ btn.addEventListener("click", function() {
     console.log("click")
     if (theme.getAttribute("href") == "light-style.css") {
         theme.href = "dark-style.css";
-        btn.innerHTML = 'Light';
     } else {
         theme.href = "light-style.css";
         btn.innerHTML = 'Dark';

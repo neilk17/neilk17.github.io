@@ -1,5 +1,6 @@
 :root {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    scroll-behavior: smooth;
     --font-mid: 24px;
   }
 @font-face {
@@ -7,6 +8,11 @@
     font-weight: 400;
     src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: DodgerBlue;
+  }
 .container {
     display: flex;
     flex-direction: column;
@@ -34,8 +40,8 @@
     font-weight: bold;
     display: flex;
     flex-direction: row;
-    margin-top: 30vh;
-    margin-bottom: 25vh;
+    margin-top: 25vh;
+    margin-bottom: 10vh;
     margin-left: auto;
     margin-right: auto;
     vertical-align: middle;
@@ -53,7 +59,7 @@
     height: auto;
 }
 .main p {
-    font-size: min(3rem, 10vw);
+    font-size: min(2.5em, 10vw);
     margin-left: auto;
     margin-right: auto;
     align-items: center;
@@ -114,4 +120,17 @@ button {
 .black {
     background-color: black;
     color: white;
+}
+.spacer {
+    aspect-ratio: 960/100;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.layer1 {
+    background-image: url(layered-waves.svg);
+}
+.layer2 {
+    background-image: url(layered-waves2.svg);
 }
