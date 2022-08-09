@@ -5,7 +5,6 @@ btn.addEventListener("click", function() {
     if (theme.getAttribute("href") == "light-style.css") {
         theme.href = "dark-style.css";
     } else {
-        theme.href = "light-style.css";
         btn.innerHTML = 'Dark';
     }
 });
