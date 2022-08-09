@@ -1,2 +1,1 @@
-# Blog
-Personal Blog
+https://neilk17.github.io/
