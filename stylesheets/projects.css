@@ -1,0 +1,42 @@
+:root {
+    font-size: 22px;
+    font-family: 'San Francisco';
+    --text-primary: white;
+    --text-secondary: #D9BBF9;
+    --bg-primary: #131200;
+    --bg-secondary: #8AEA92;
+}
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+body {
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--text-secondary);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--bg-secondary);
+}
+
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+.navbar {
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--bg-secondary);
+}
