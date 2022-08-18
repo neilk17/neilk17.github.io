@@ -4,10 +4,10 @@
     <!-- google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T7ZSJZB0B6"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-T7ZSJZB0B6');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-T7ZSJZB0B6');
     </script>
     <!-- google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,14 +20,17 @@
     <!-- stylesheets -->
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="stylesheets/light-style.css" id="theme-link">
-    <link rel="stylesheet" href="stylesheets/contact.css">
     <!-- javascript -->
     <script src="js/script.js" async></script>
     </head>
     <body>
+	<main class="main-container">
+	    <h1>Neil Kanakia</h1>
+	    <h2>Software Engineer in <br>📍Philadelphia</h2>
+	</main>
         <div class="flex-container">
-            <section id="contact">
-                <form action="https://formspree.io/f/xqkjkjdb" method="POST" id="survey-form">
+            <section class="contact">
+                <form action="https://formspree.io/f/xqkjkjdb" method="POST">
                     <h1>Contact me</h1>
                     <fieldset>
                         <label id="name-label">Name:</label>
@@ -41,12 +44,15 @@
                 </form>
             </section>
             <div>
-                <h1 style="text-align: center">
-                    I'm Neil Kanakia.
-                </h1>
                 <button class="dark-mode">
                     <img src="img/face.png" alt="face with mac">
                 </button>   
+                <div class="links">
+		    <a href="https://github.com/neilk17">github</a>
+		    <a href="resume.pdf">resume</a>
+		    <a href="https://twitter.com/neilkanakia">twitter</a>
+		    <a href="#"><s>blog</s></a>
+                </div>
             </div>
         </div>
     </body>

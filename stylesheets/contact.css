@@ -1,13 +1,14 @@
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: none;
-}
-
 form {
     width: 60vw;
     max-width: 500px;
     min-width: 300px;
     margin: 0 auto;
+}
+
+@media only screen and (max-width: 800px) {
+  form {
+    text-align: center;
+  }
 }
 fieldset {
     border: none;
@@ -32,7 +33,7 @@ input, textarea {
     resize: none;
 }
 textarea {
-    width: 200px;
+    width: 275px;
     height: 65px;
 }
 ::placeholder {

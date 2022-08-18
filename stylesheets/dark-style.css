@@ -1,17 +1,17 @@
-* {
-    background-color: black;
-    color: white;
+:root {
+    --primary-bg: #1B2430;
+    --primary-text: #D6D5A8;
+    --secondary-text: #816797;
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+}
+a {
+    color: #816797;
 }
 button {
-   background-color: white; 
-   color: black;
+   background-color: var(--primary-bg); 
+   color: var(--primary-text);
 }
 .black {
-    background-color: black;
-}
-.curve::before {
-    background-color: black;
-}
-.curve::after {
-    background-color: black;
+    background-color: var(--primary-bg);
 }
