@@ -1,19 +1,18 @@
 :root {
-    font-size: 22px;
-    font-family: 'San Francisco';
-    --text-primary: white;
-    --text-secondary: #D9BBF9;
-    --bg-primary: #131200;
-    --bg-secondary: #8AEA92;
-}
-@font-face {
-    font-family: "San Francisco";
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    scroll-behavior: smooth;
     font-weight: 400;
-    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --transition-speed: 600ms;
 }
+
 body {
-    color: var(--text-primary);
-    background-color: var(--bg-primary);
+    color: black;
+    background-color: white;;
     margin: 0;
     padding: 0;
 }
@@ -23,20 +22,89 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: var(--text-secondary);
+    background: #1e1e24
 }
 
 body::-webkit-scrollbar-thumb {
-    background: var(--bg-secondary);
-}
+    background: #6649b8;
+  }
 
 main {
     margin-left: 5rem;
     padding: 1rem;
 }
+
 .navbar {
+    position: fixed;
+    background-color: var(--bg-primary);
     width: 5rem;
     height: 100vh;
-    position: fixed;
-    background-color: var(--bg-secondary);
+    transition: width 200ms ease;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-item:last-child {
+    margin-top: auto;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--transition-speed);
+}
+
+.nav-link svg {
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.navbar:hover {
+    width: 16rem;
+}
+
+.navbar:hover .link-text {
+    display: block;
+}
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.logo-text {
+  display: inline;
+  position: absolute;
+  left: -999px;
+  transition: var(--transition-speed);
+}
+
+.fa-primary {
+    color: #ff7eee;
+}
+
+.fa-secondary {
+    color: #df49a6;
+}
+
+.fa-primary,
+.fa-secondary {
+    transition: var(--transition-speed);
 }
