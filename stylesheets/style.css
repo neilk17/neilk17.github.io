@@ -2,6 +2,15 @@
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
   }
+.dark-mode {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
 .flex-container {
     display: flex;
     flex-wrap: wrap-reverse;
@@ -20,9 +29,6 @@
     font-weight: bold;
     margin-top: 2rem;
 }
-.topnav .icon {
-    display: none;
-  }
 .main {
     font-weight: bold;
     display: flex;
