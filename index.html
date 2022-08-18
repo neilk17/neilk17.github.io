@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <!-- Google tag (gtag.js) -->
+    <!-- google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T7ZSJZB0B6"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
@@ -9,47 +9,45 @@
     gtag('js', new Date());
     gtag('config', 'G-T7ZSJZB0B6');
     </script>
+    <!-- google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,600&family=Open+Sans:wght@700&family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
     <!-- meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
     <title>Neil Kanakia</title>
-    <!-- favicon -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- stylesheets -->
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="stylesheets/light-style.css" id="theme-link">
+    <link rel="stylesheet" href="stylesheets/contact.css">
     <!-- javascript -->
     <script src="js/script.js" async></script>
     </head>
     <body>
-        <div class="container">
-            <div class="navbar">
-                <a href="#about">About</a>
-                <a href="#work">Work</a>
-                <a href="#contact">Contact</a>
-                <button class="btn-toggle">Dark</button>
-            </div>
-            <div class="main">
-                <img src="img/face.png" alt="face with mac">
-                <div class="circle"></div>
-                <p>
-                    Neil Kanakia.<br>
-                    Software Engineer.<br>
-                    UI Designer.<br>
-                </p>
-            </div>
-            <div class="spacer layer1"></div>
-            <div class="spacer layer2"></div>
-        </div>
-        <div class="projects">
+        <div class="flex-container">
             <section id="contact">
-                <h1>Contact me</h1>
-                <div class="flex-container">
-                    <a href="mailto:kanakianeil@gmail.com"><ion-icon name="mail-outline"></ion-icon></a>
-                    <a href="https://www.linkedin.com/in/neilk17/"><ion-icon name="logo-linkedin"></ion-icon></a>
-                </div>
+                <form action="https://formspree.io/f/xqkjkjdb" method="POST" id="survey-form">
+                    <h1>Contact me</h1>
+                    <fieldset>
+                        <label id="name-label">Name:</label>
+                        <input id="name" name="fullname" type="text" placeholder="John Doe" required>
+                        <label id="email-label">Email:</label>
+                        <input id="email" type="email" placeholder="johndoe@mail.com" required>
+                        <label id="message-label">Your message:
+                        </label><textarea name="message" placeholder="Type your message here"></textarea>
+                    </fieldset>
+                    <button type="submit">Submit</button>
+                </form>
             </section>
+            <div>
+                <h1 style="text-align: center">
+                    I'm Neil Kanakia.
+                </h1>
+                <button class="dark-mode">
+                    <img src="img/face.png" alt="face with mac">
+                </button>   
+            </div>
+        </div>
     </body>
 </html>
