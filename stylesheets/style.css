@@ -18,40 +18,6 @@
     align-items: center;
     text-decoration: none;
   }
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: center;
-}
-.navbar {
-    text-align: center;
-    font-weight: bold;
-    margin-top: 2rem;
-}
-.main {
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    margin-top: 25vh;
-    margin-bottom: 10vh;
-    margin-left: auto;
-    margin-right: auto;
-    vertical-align: middle;
-}
-.main img {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-}
-.main p {
-    font-size: min(2.5em, 10vw);
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    justify-content: center;
-}
 button {
     background-color: #000000;
     border: none;
