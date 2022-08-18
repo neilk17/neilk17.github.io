@@ -1,5 +1,5 @@
 let darkModePreference = window.matchMedia("(prefers-color-scheme: dark)").matches;
-const btn = document.querySelector(".btn-toggle");
+const btn = document.querySelector(".dark-btn");
 const theme = document.querySelector("#theme-link");
 
 if (darkModePreference) {
