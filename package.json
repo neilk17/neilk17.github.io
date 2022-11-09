@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "https://neilk17.github.io/ https://neilkanakia.xyz/",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/styles.scss:assets/css/styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neilk17/Blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neilk17/Blog/issues"
+  },
+  "homepage": "https://github.com/neilk17/Blog#readme",
+  "dependencies": {
+    "sass": "^1.56.1"
+  }
+}
