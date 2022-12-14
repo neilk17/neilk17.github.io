@@ -17,6 +17,10 @@
     cursor: pointer;
     outline: inherit;
 }
+.img-button img {
+    border-radius: 50%;
+    width: 350px;
+}
 .flex-container {
     display: flex;
     flex-wrap: wrap-reverse;
